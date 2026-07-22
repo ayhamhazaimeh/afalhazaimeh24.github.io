@@ -1,0 +1,91 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — [Ayham AL-hazaimeh-178765]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/mine.jpeg">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-logo"> Ayham AL-hazaimeh  [178765] </div>
+            <div class="nav-links">
+                <a href="index.html">home</a>
+                <a href="contact.html" class="active">contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section style="border-top:none; padding-top:56px;">
+            <p class="section-label">Contact</p>
+            <h2>Send me a message</h2>
+           
+            <form>
+                <div class="field">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Jane Doe">
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your gmail@gmail.com">
+                </div>
+
+                <div class="field">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" placeholder="Irbid the best country">
+                </div>
+
+                <div class="field">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" placeholder="Write your message here...if it emportant , if not don't"></textarea>
+                </div>
+
+                <button type="button" onclick="validateForm()">Submit</button>
+            </form>
+        </section>
+
+    </div>
+
+    
+
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="terminal-bar">
+                <span class="dot" style="background:#000000;"></span>
+                <span class="dot" style="background:#ffffff;"></span>
+                <span class="dot" style="background:#000000;"></span>
+                <span class="terminal-title">do it..!</span>
+                
+            </div>
+            <div class="terminal-body">
+                <p class="modal-heading">Thanks for reaching out!</p>
+                <p class="modal-sub">You can also find me here:</p>
+
+                <div class="contact-line">
+                    <span class="label">instagram</span>
+                    <span class="value"><a href="https://instagram.com/6a___1m" target="_blank" rel="noopener">@6a___1m</a></span>
+                </div>
+                <div class="contact-line">
+                    <span class="label">phone</span>
+                    <span class="value">[+962792221662]</span>
+                </div>
+                <div class="contact-line">
+                    <span class="label">email</span>
+                    <span class="value"><a href="mailto:ayhamalhazaimeh2006@email.com\">My Email</a></span>
+                </div>
+
+                <button class="modal-close" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body></html>
